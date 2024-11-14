@@ -1,0 +1,133 @@
+/* Global Styles */
+:root {
+    --bg-light: #f9f9f9;
+    --bg-dark: #1e1e1e;
+    --text-light: #636363;
+    --text-dark: #f9f9f9;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #2c2c2c;
+    --table-border-light: #dddddd;
+    --table-border-dark: #444444;
+    --link-light: #007acc;
+    --link-dark: #66baff;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+  
+    .card__container {
+      background-color: var(--card-bg-dark);
+      color: var(--text-light);
+    }
+  
+    .contest__table {
+      background-color: var(--card-bg-dark);
+      border: 1px solid var(--table-border-dark);
+    }
+    
+    tr {
+        color: var(--text-light);
+    }
+
+    thead {
+        background-color: var(--bg-light);
+    }
+
+  
+    a {
+      color: var(--link-dark);
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-light);
+    }
+  
+    .card__container {
+      background-color: var(--card-bg-light);
+      color: var(--text-dark);
+    }
+  
+    .contest__table {
+      background-color: var(--card-bg-light);
+      border: 1px solid var(--table-border-light);
+    }
+  
+  
+    a {
+      color: var(--link-light);
+    }
+  }
+  
+  /* App Container */
+  .app__container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  /* Contest Table */
+  .contest__table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  td img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  h2 {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+  }
+  
+  span {
+    font-size: 1rem;
+    color: var(--text-light);
+  }  
+
+  /* Icon Button Styling */
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: var(--text-light);
+    font-size: 1.2rem;
+  }
+  
+  .icon-button:hover {
+    color: var(--link-light);
+  }
+  
+  /* The rest of the CSS remains the same */
+  

@@ -1,0 +1,20 @@
+{
+    "manifest_version" : 3,
+    "version" : "1.0.0",
+    "name" : "Contest Tracker Extension",
+    "icons":{
+        "16" : "ct-logo-16.png",
+        "48" : "ct-logo-48.png",
+        "128" : "ct-logo-128.png"
+    },
+    "action" : {
+        "default_popup" : "index.html"
+    },
+    "permissions" : [
+        "scripting"
+    ],
+    "host_permissions" : [
+       "http://*/*",
+        "https://*/*"
+    ]
+}
